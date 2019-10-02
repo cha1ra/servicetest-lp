@@ -1,7 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
 export default {
   mode: 'universal',
+  server: {
+    port: 8888 // デフォルト: 3000
+  },
   /*
   ** Headers of the page
   */
@@ -44,7 +48,8 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Axios module configuration
@@ -82,5 +87,18 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  hooks: {
+    generate: {
+      extendRoutes (routes) {
+        const filtered = routes.filter(page => page.route !== '/index.html')
+        routes.splice(0, routes.length, ...filtered)
+      }
+    }
+  },
+  env: {
+    WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL,
+    WP_USER: process.env.WPUSER,
+    APPLICATION_PASSWORD: process.env.APPLICATION_PASSWORD
   }
 }
