@@ -22,17 +22,17 @@
 </template>
 
 <script>
-import HeaderImage from '~/components/HeaderImage.vue'
-import Features from '~/components/Features.vue'
-import AskForm from '~/components/AskForm.vue'
-import WhyDoTest from '~/components/WhyDoTest.vue'
-import Problem from '~/components/Problem.vue'
-import Solution from '~/components/Solution.vue'
-import AboutUs from '~/components/AboutUs.vue'
-import Services from '~/components/Services.vue'
-import CatchCopy from '~/components/CatchCopy.vue'
-import Questions from '~/components/Questions.vue'
-import TimeLine from '~/components/TimeLine.vue'
+import HeaderImage from '~/components/servicetest/HeaderImage.vue'
+import Features from '~/components/servicetest/Features.vue'
+import AskForm from '~/components/servicetest/AskForm.vue'
+import WhyDoTest from '~/components/servicetest/WhyDoTest.vue'
+import Problem from '~/components/servicetest/Problem.vue'
+import Solution from '~/components/servicetest/Solution.vue'
+import AboutUs from '~/components/servicetest/AboutUs.vue'
+import Services from '~/components/servicetest/Services.vue'
+import CatchCopy from '~/components/servicetest/CatchCopy.vue'
+import Questions from '~/components/servicetest/Questions.vue'
+import TimeLine from '~/components/servicetest/TimeLine.vue'
 
 export default {
   components: {
