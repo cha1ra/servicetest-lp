@@ -47,6 +47,14 @@ export default {
     CatchCopy,
     Questions,
     TimeLine
+  },
+  head () {
+    return {
+      title: '仮説検証テスト代行サービス',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
   }
 }
 </script>

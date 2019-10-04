@@ -7,7 +7,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019 ProgLearn.com All Rights Reserved</span>
+      <span>&copy; 2019 <a href="https://corp.proglearn.com">ProgLearn.com</a> All Rights Reserved</span>
     </v-footer>
   </v-app>
 </template>
